@@ -10,6 +10,8 @@
 <h3>Free Place ${customer.freePass}</h3>
 <br>
 <h3>Postal code ${customer.postalCode}</h3>
+<br>
+<h3>Course code ${customer.courseCode}</h3>
 
 </body>
 

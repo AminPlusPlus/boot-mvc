@@ -37,7 +37,6 @@ public class CustomerController {
     @RequestMapping("/processForm")
     public String processForm(@Valid @ModelAttribute("customer") Customer customer,
                               BindingResult result){
-
         return (result.hasErrors()) ? "showform" : "confirm";
 
     }
