@@ -39,5 +39,6 @@ public class CustomerController {
                               BindingResult result){
         return (result.hasErrors()) ? "showform" : "confirm";
 
+
     }
 }
