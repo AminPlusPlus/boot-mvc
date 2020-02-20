@@ -18,7 +18,7 @@
    Last Name <form:input path="lastName"/>
     <form:errors path="lastName" cssStyle="color: red" cssClass="error"/>
     <br/>
-    Free Passes <form:input path="email"/>
+    Email <form:input path="email"/>
     <form:errors path="email" cssStyle="color: red" cssClass="error"/>
     <input type="submit" value="Submit">
 </form:form>

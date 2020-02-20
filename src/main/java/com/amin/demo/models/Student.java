@@ -5,10 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
@@ -20,7 +17,8 @@ import javax.validation.constraints.Pattern;
 public class Student {
 
     @Id
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @NotNull(message = "is required")
     @Column(name = "first_name")
@@ -30,6 +28,7 @@ public class Student {
     @Column(name = "last_name")
     private String lastName;
 
+    @NotNull(message = "is required")
     @Pattern(regexp = "^(.+)@(.+)$", message = "it's should be email mum or miu email! ")
     @Column(name = "email")
     private String email;

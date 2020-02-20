@@ -5,9 +5,11 @@
 </head>
 
 <body>
-<h1>Welcome to the Student Registration ${stundent.firstName}  ${student.lastName} </h1>
+<h1>Welcome to the Student Registration</h1>
 <br/>
-<h3>Email ${student.email}</h3>
+<h3>First Name : ${student.firstName}</h3>
+<h3>First Name : ${student.lastName}</h3>
+<h3>Email : ${student.email}</h3>
 
 
 </body>
