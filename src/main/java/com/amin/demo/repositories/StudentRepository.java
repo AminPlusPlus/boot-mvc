@@ -11,6 +11,12 @@ import java.util.List;
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Long> {
 
+    //Get students list by the name
     @Query(value = "from Student s where s.lastName = :lastName ")
     List<Student> getStudentByLastName(@Param("lastName") String lastName );
+
+
+    //Update all student emails
+    @Query(value = "update Student set email = :email")
+    void updateAllStudentEmails(@Param("email") String email);
 }
